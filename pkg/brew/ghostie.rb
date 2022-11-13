@@ -6,12 +6,10 @@ class Ghostie < Formula
 
   depends_on "sqlite"
 
-  on_macos do
+  if OS.mac?
     url "https://github.com/attriaayush/ghostie/releases/download/#{version}/ghostie-#{version}-x86_64-apple-darwin.tar.gz"
     sha256 "eb1fcc3eafb4588dc0c62fda6134b808bccca57e428dd6d1194ddfce05a6e5d7"
-  end
-
-  on_linux do
+  elsif OS.linux?
     url "https://github.com/attriaayush/ghostie/releases/download/#{version}/ghostie-#{version}-x86_64-unknown-linux-gnu.tar.gz"
     sha256 "d2bfea37c323d492406f749a7a3f7f803fa05a4ed603caab79bab3f97855a667"
   end
