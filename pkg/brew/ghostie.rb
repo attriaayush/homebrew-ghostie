@@ -1,6 +1,8 @@
 class Ghostie < Formula
   desc "Github notifications in your terminal"
   homepage "https://github.com/attriaayush/ghostie"
+  url "https://github.com/attriaayush/ghostie/archive/refs/tags/v0.1.0.tar.gz"
+  sha256 "ef167f949ac84efdccdf462feee4b6f3c04241d9d750ddde3337cd2936e3215f"
   version "v0.1.0"
 
   depends_on "sqlite"
