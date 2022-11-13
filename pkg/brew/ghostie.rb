@@ -1,8 +1,7 @@
 class Ghostie < Formula
   desc "Github notifications in your terminal"
-  version "v0.1.0"
   homepage "https://github.com/attriaayush/ghostie"
-  license "MIT"
+  version "v0.1.0"
 
   depends_on "sqlite"
 
@@ -15,14 +14,10 @@ class Ghostie < Formula
   end
 
   def install
-    bin.install "ghostie"
+    bin.install 'ghostie'
   end
 
-   def caveats
-    <<~EOS
-      ONE MORE STEP!
-      Add the following to the end of your ~/.bashrc, ~/.zshrc, or ~/.config/fish/config.fish file.
-    EOS
-   end
+  test do 
+    system "#{bin}/ghostie"
+  end
 end
-
