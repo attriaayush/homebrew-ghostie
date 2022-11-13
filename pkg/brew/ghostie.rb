@@ -14,7 +14,7 @@ class Ghostie < Formula
   end
 
   def install
-    bin.install 'ghostie'
+    bin.install "ghostie"
   end
 
   test do 
