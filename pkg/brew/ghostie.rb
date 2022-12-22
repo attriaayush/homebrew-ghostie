@@ -1,16 +1,16 @@
 class Ghostie < Formula
   desc "Github notifications in your terminal"
   homepage "https://github.com/attriaayush/ghostie"
-  version "v0.1.0"
+  version "v0.2.0"
 
   depends_on "sqlite"
 
   if OS.mac?
     url "https://github.com/attriaayush/ghostie/releases/download/#{version}/ghostie-#{version}-x86_64-apple-darwin.tar.gz"
-    sha256 "eb1fcc3eafb4588dc0c62fda6134b808bccca57e428dd6d1194ddfce05a6e5d7"
+    sha256 "6ceecbe3976fbd3601a742c0e60e282a03c6b68be6a4a01d947f49bbc2e18378"
   elsif OS.linux?
     url "https://github.com/attriaayush/ghostie/releases/download/#{version}/ghostie-#{version}-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "d2bfea37c323d492406f749a7a3f7f803fa05a4ed603caab79bab3f97855a667"
+    sha256 "49b0b3cdd20783350e077d44a74bc614f574fd32c6d3ddf47c579aa5dc758060"
   end
 
   def install
